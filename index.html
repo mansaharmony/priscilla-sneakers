@@ -57,17 +57,30 @@
         .btn:hover {
             background-color: #ff3b49;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-        </ul>
-    </nav>
-
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </div>
     <div class="hero" id="hero">
         <div>
             <h1>Welcome to Priscilla Sneakers</h1>
@@ -75,7 +88,6 @@
             <a href="products.html" class="btn">Shop Now</a>
         </div>
     </div>
-
     <script>
         const accessKey = 'i6eiZQTH093E3J47B03UVrUTCxhRBu5URWomT-dvA0M';
         const url = `https://api.unsplash.com/photos/random?query=NIKE-JORDAN&client_id=${accessKey}`;
@@ -92,4 +104,3 @@
     </script>
 </body>
 </html>
-
