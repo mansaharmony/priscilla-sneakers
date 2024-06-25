@@ -48,6 +48,37 @@
             font-weight: bold;
             color: #ff5f6d;
         }
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin-right: 20px;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        header nav ul li a:hover {
+            color: #ff5f6d;
+        }
         /* Footer styles */
         footer {
             background-color: #333;
@@ -78,6 +109,20 @@
     </style>
 </head>
 <body>
+    <header>
+        <h1>Priscilla Sneakers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="products" id="products">
         <h1>Our Products</h1>
         <div class="product">
@@ -90,6 +135,7 @@
         </div>
         <!-- Repeat for other products -->
     </div>
+
     <footer>
         <ul>
             <li><a href="blog.html">Blog</a></li>
