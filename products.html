@@ -11,6 +11,23 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         .products {
             padding: 20px;
             text-align: center;
@@ -50,14 +67,10 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-        </ul>
-    </nav>
-
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </div>
     <div class="products" id="products">
         <h1>Our Products</h1>
         <div class="product">
